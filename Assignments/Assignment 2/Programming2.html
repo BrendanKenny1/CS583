@@ -14950,9 +14950,10 @@ Shape of y_val: (10000, 10)
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">))</span>
 
 <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-<span class="c1"># added a second layer of conv2d before each round of batch normalization</span>
+<span class="c1"># seperated the activation and conv2D layers with batch nomralization</span>
+<span class="c1"># added a second conv2d layer with same number of units before each round of max pooling</span>
 <span class="c1"># added two conv2D layers with 128 units</span>
-<span class="c1"># Included batch normalization layers following each Conv2D layer. </span>
+<span class="c1"># Added dropout layers to end of conv2D layers and each dense layer</span>
 <span class="c1"># Added anoither dense layer with 512 units and dropout layers to the fully connected layers.</span>
 </pre></div>
 
